@@ -1,0 +1,115 @@
+Cenario 1 - Processos curtos
+
+Algoritmo: FCFS
+Sequencia: P1 de 0 a 3; P2 de 3 a 4; P3 de 4 a 6
+Processo     CPU   Prioridade   Espera   Turnaround
+P1             3            1        0            3
+P2             1            1        3            4
+P3             2            1        4            6
+Espera media: 2,33
+Turnaround medio: 4,33
+
+Algoritmo: SJF
+Sequencia: P2 de 0 a 1; P3 de 1 a 3; P1 de 3 a 6
+Processo     CPU   Prioridade   Espera   Turnaround
+P1             3            1        3            6
+P2             1            1        0            1
+P3             2            1        1            3
+Espera media: 1,33
+Turnaround medio: 3,33
+
+Algoritmo: Prioridade
+Sequencia: P1 de 0 a 3; P2 de 3 a 4; P3 de 4 a 6
+Processo     CPU   Prioridade   Espera   Turnaround
+P1             3            1        0            3
+P2             1            1        3            4
+P3             2            1        4            6
+Espera media: 2,33
+Turnaround medio: 4,33
+
+Algoritmo: Round Robin (quantum 2)
+Sequencia: P1 de 0 a 2; P2 de 2 a 3; P3 de 3 a 5; P1 de 5 a 6
+Processo     CPU   Prioridade   Espera   Turnaround
+P1             3            1        3            6
+P2             1            1        2            3
+P3             2            1        3            5
+Espera media: 2,67
+Turnaround medio: 4,67
+
+============================================================
+Cenario 2 - Curtos e longos
+
+Algoritmo: FCFS
+Sequencia: P1 de 0 a 8; P2 de 8 a 10; P3 de 10 a 11
+Processo     CPU   Prioridade   Espera   Turnaround
+P1             8            1        0            8
+P2             2            1        8           10
+P3             1            1       10           11
+Espera media: 6,00
+Turnaround medio: 9,67
+
+Algoritmo: SJF
+Sequencia: P3 de 0 a 1; P2 de 1 a 3; P1 de 3 a 11
+Processo     CPU   Prioridade   Espera   Turnaround
+P1             8            1        3           11
+P2             2            1        1            3
+P3             1            1        0            1
+Espera media: 1,33
+Turnaround medio: 5,00
+
+Algoritmo: Prioridade
+Sequencia: P1 de 0 a 8; P2 de 8 a 10; P3 de 10 a 11
+Processo     CPU   Prioridade   Espera   Turnaround
+P1             8            1        0            8
+P2             2            1        8           10
+P3             1            1       10           11
+Espera media: 6,00
+Turnaround medio: 9,67
+
+Algoritmo: Round Robin (quantum 2)
+Sequencia: P1 de 0 a 2; P2 de 2 a 4; P3 de 4 a 5; P1 de 5 a 7; P1 de 7 a 9; P1 de 9 a 11
+Processo     CPU   Prioridade   Espera   Turnaround
+P1             8            1        3           11
+P2             2            1        2            4
+P3             1            1        4            5
+Espera media: 3,00
+Turnaround medio: 6,67
+
+============================================================
+Cenario 3 - Prioridades diferentes
+
+Algoritmo: FCFS
+Sequencia: P1 de 0 a 4; P2 de 4 a 6; P3 de 6 a 9
+Processo     CPU   Prioridade   Espera   Turnaround
+P1             4            3        0            4
+P2             2            1        4            6
+P3             3            2        6            9
+Espera media: 3,33
+Turnaround medio: 6,33
+
+Algoritmo: SJF
+Sequencia: P2 de 0 a 2; P3 de 2 a 5; P1 de 5 a 9
+Processo     CPU   Prioridade   Espera   Turnaround
+P1             4            3        5            9
+P2             2            1        0            2
+P3             3            2        2            5
+Espera media: 2,33
+Turnaround medio: 5,33
+
+Algoritmo: Prioridade
+Sequencia: P2 de 0 a 2; P3 de 2 a 5; P1 de 5 a 9
+Processo     CPU   Prioridade   Espera   Turnaround
+P1             4            3        5            9
+P2             2            1        0            2
+P3             3            2        2            5
+Espera media: 2,33
+Turnaround medio: 5,33
+
+Algoritmo: Round Robin (quantum 2)
+Sequencia: P1 de 0 a 2; P2 de 2 a 4; P3 de 4 a 6; P1 de 6 a 8; P3 de 8 a 9
+Processo     CPU   Prioridade   Espera   Turnaround
+P1             4            3        4            8
+P2             2            1        2            4
+P3             3            2        6            9
+Espera media: 4,00
+Turnaround medio: 7,00
