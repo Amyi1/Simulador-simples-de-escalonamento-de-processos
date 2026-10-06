@@ -14,7 +14,7 @@ Com o Python instalado, abra o terminal na pasta do projeto e execute:
 ```bash
 python Simulador simples_de_escalonamento_de_processos.py
 ```
-
+Ou execute usando VScode.
 
 O programa mostra a sequência de execução, o tempo de espera e o turnaround de cada processo, além das médias. Para alterar o quantum, mude a variável `QUANTUM` no início do código.
 
