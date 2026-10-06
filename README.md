@@ -12,7 +12,7 @@ O programa foi desenvolvido em Python e compara FCFS, SJF, Prioridade e Round Ro
 Com o Python instalado, abra o terminal na pasta do projeto e execute:
 
 ```bash
-python simulador.py
+python Simulador simples_de_escalonamento_de_processos.py
 ```
 
 
@@ -20,7 +20,7 @@ O programa mostra a sequência de execução, o tempo de espera e o turnaround d
 
 ## Arquivos
 
-- `simulador.py`: código do simulador.
+- `Simulador simples_de_escalonamento_de_processos.py`: código do simulador.
 - `results.txt`: saída das 12 execuções, com quatro algoritmos em cada cenário.
 - `conferencia-manual-e-analise.pdf`: relatório com integrantes, resultados, conferência manual e análise.
 - `referência`: : https://github.com/Ronix-arch/Operating-Systems-CPU-Scheduling-Policies
